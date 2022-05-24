@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Home</title>
+	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<link rel="stylesheet" type="text/css" href="dashboard-css.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+<style>
+
+
+body {font-family: Verdana, Arial, sans-serif;}
+	
+form {border: 1px solid #f1f1f1;
+	  width: 100%;	
+}
+
+input[type=text], input[type=password] {
+  width: 80%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #000000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 5px 18px;
+  background-color: #950000;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 10%;
+  border-radius: 20%;
+}
+
+.login_container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+	
+	.cancelbtn {
+     width: 100%;
+  }
+} 	
+	
+  </style>
+	
+
+</head>
+	
+<body>
+<div class="hero-image">	
+   <br> <br>
+	<center>
+		<a class="sansserif" href="https://localhost/crn-erp/index.htm" target="_self">Home</a>
+		<a class="sansserif" href="https://localhost/crn-erp/dashboard.php" target="_self">Dashboard</a>
+		<a class="sansserif" href="https://localhost/crn-erp/Lieferanten.php" target="_self">Lieferanten</a> 
+		<a class="sansserif" href="https://localhost/crn-erp/Artikel.php" target="_self">Artikel</a>
+    <a class="sansserif" href="https://localhost/crn-erp/GUV.php" target="_self">GUV</a>	
+  </center>
+    <br><br>
+	
+	
+	<div class="row">
+  		<div class="col-4 col-s-2 menu">
+      	</div>	
+		
+		<div class="col-4 col-s-8 menu">
+	
+	<center>
+
+    <h1>CRN-ERP</h1> 
+	<h2>Login</h2>
+
+<form action="/action_page.php" method="post">
+  <div class="imgcontainer">
+    <img src="img/Avatar01.svg" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="login_container">
+    <label for="uname"><b></b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+	  <br>
+
+    <label for="psw"><b></b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+	  <br>
+        
+    <button type="submit">Login</button>
+	  <br>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="login_container">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		
+		</center>
+		</div>
+		
+		 <div class="col-4 col-s-2 menu">
+      	</div>	
+		
+	</div>
+	</div>
+		
+</body>
+</html>
