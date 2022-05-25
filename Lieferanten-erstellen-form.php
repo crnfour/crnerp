@@ -82,7 +82,8 @@
 	<center>
 		<a class=sansserif href="https://php.crnfour.de/" target=>Home</a>
 		<a class="sansserif" href="https://php.crnfour.de/Lieferanten" target>Lieferanten</a> 
-		<a class="sansserif" href="https://php.crnfour.de/Artikel" target>Artikel</a></center>	
+		<a class="sansserif" href="https://php.crnfour.de/Artikel" target>Artikel</a>
+	</center>	
 
 		
 <center><br><br>

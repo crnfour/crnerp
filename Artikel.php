@@ -145,7 +145,6 @@ echo "<tr><td></td><td></td><td></td><td></td><td>$preis</td><td>$bestand</td><t
 // closeing table tag
 echo "</table>";
 
-$conn->close();
 ?>
 				</div>
 			</div>

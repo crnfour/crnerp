@@ -96,7 +96,7 @@ echo "</table>";
  
 mysqli_free_result( $db_erg );
 
-$conn->close();
+
 ?>		
 				
 				</div>		
