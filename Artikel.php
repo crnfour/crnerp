@@ -98,8 +98,9 @@ $bestand = 0;
 // declare variable to store the price addition in the while loop
 $preis = 0;
 
-// declare variable to store the price addition in the while loop
-$gesamtpreis = $rowval['Einzelpreis'] * $rowval['Lagerbestand'];
+
+
+
 
 // declare variable to store the total price addition in the while loop
 $summe_gesamtpreis = 0;
@@ -121,7 +122,8 @@ while($rowval = mysqli_fetch_array($result))
   echo "<td>" . $rowval['Einzelpreis3'] . "</td>";
   
   echo "<td>" . $rowval['Lagerbestand'] . "</td>";
-	
+
+  // declare variable to store the price addition in the while loop
   $gesamtpreis = $rowval['Einzelpreis3'] * $rowval['Lagerbestand'];
 	
   echo "<td>" . $gesamtpreis . "</td>";
