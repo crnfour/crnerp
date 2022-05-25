@@ -98,10 +98,6 @@ $bestand = 0;
 // declare variable to store the price addition in the while loop
 $preis = 0;
 
-
-
-
-
 // declare variable to store the total price addition in the while loop
 $summe_gesamtpreis = 0;
 
