@@ -102,13 +102,14 @@ if ($db_link->connect_error) {
     die("Connection failed: " . $db_link->connect_error);
 }
 
-$sql = "INSERT INTO Lieferanten ( Name, Website, Produkte, Ansprechpartner, Email, Strasse, Hausnummer, PLZ, Ort, Telefon) VALUES ( '$name', '$webseite', '$produkte', '$ansprechpartner', '$email', '$strasse', '$hausnummer', '$plz', '$ort', '$telefon')";
+$sql = "INSERT INTO Lieferanten (Name, Website, Produkte, Ansprechpartner, Email, Strasse, Hausnummer, PLZ, Ort, Telefon) VALUES ( '$name', '$webseite', '$produkte', '$ansprechpartner', '$email', '$strasse', '$hausnummer', '$plz', '$ort', '$telefon')";
 
-$run = mysqli_query ($db_link,$sql);
+$run = $db_link->query($sql);
 
 if ($db_link->query($sql) === TRUE) {
-  echo "Neuen Lieferanten erfolgreich angelegt";
-} else {
+  echo "Neuer Lieferant erfolgreich angelegt <br>";
+} 
+else {
   echo "Error: " . $sql . "<br>" . $db_link->error;
 }
 
@@ -117,7 +118,7 @@ $db_link->close();
 ?>
 		<br>
 		<div><center>
-		<a class="sansserif" href="https://localhost/crn-erp/Lieferanten.php" style="color:white" target>Zurück zu Lieferanten</a> 
+		<a class="sansserif" href="https://localhost/crn-erp/Lieferanten.php" style="color:white" target> Zurück zu Lieferanten</a> 
 		<br>
 			</center>
 			</div>
