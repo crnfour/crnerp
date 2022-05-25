@@ -81,25 +81,30 @@
 <?php
 
 $name = $_POST['name'];
+$webseite = $_POST['webseite'];
+$produkte = $_POST['produkte'];
 $ansprechpartner = $_POST['ansprechpartner'];
 $email = $_POST['email'];
+$strasse = $_POST['strasse'];
+$hausnummer = $_POST['hausnummer'];
+$plz = $_POST['plz'];
 $ort = $_POST['ort'];
-
+$telefon = $_POST['telefon'];
 
 
 /// CONNECT TO DATABASE
 $hostname="localhost"; //// specify host, i.e. 'localhost'
 $user="root"; //// specify username
 $pass=""; //// specify password
-$dbase="crnerp_v02"; //// specify database name
+$dbase="crnerp_v04"; //// specify database name
 $db_link = new mysqli($hostname, $user, $pass, $dbase);
 if ($db_link->connect_error) {
     die("Connection failed: " . $db_link->connect_error);
 }
 
-$sql = "INSERT INTO Lieferanten ( Name, Ansprechpartner, Email, Ort) VALUES ( '$name', '$ansprechpartner', '$email', '$ort')";
+$sql = "INSERT INTO Lieferanten ( Name, Website, Produkte, Ansprechpartner, Email, Strasse, Hausnummer, PLZ, Ort, Telefon) VALUES ( '$name', '$webseite', '$produkte', '$ansprechpartner', '$email', '$strasse', '$hausnummer', '$plz', '$ort', '$telefon')";
 
-$run = mysqli_query ($db_connect,$sql);
+$run = mysqli_query ($db_link,$sql);
 
 if ($db_link->query($sql) === TRUE) {
   echo "Neuen Lieferanten erfolgreich angelegt";
@@ -112,7 +117,7 @@ $db_link->close();
 ?>
 		<br>
 		<div><center>
-		<a class="sansserif" href="https://localhost/crn-erp/Lieferanten" style="color:white" target>Zurück zu Lieferanten</a> 
+		<a class="sansserif" href="https://localhost/crn-erp/Lieferanten.php" style="color:white" target>Zurück zu Lieferanten</a> 
 		<br>
 			</center>
 			</div>
