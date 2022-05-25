@@ -95,6 +95,8 @@ while ($zeile = mysqli_fetch_array( $db_erg, MYSQLI_ASSOC))
 echo "</table>";
  
 mysqli_free_result( $db_erg );
+
+$conn->close();
 ?>		
 				
 				</div>		
