@@ -2,6 +2,8 @@
 <html>
 <head>
 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
+
 <title>Lieferanten erstellen</title>
 	
 	
@@ -77,84 +79,78 @@
 </head>
 <body>
 	<div class=hero-image>
-		
-		<br> <br>
-	<center>
+				<br> <br>
+		<center>
 		<a class=sansserif href="https://php.crnfour.de/" target=>Home</a>
 		<a class="sansserif" href="https://php.crnfour.de/Lieferanten" target>Lieferanten</a> 
 		<a class="sansserif" href="https://php.crnfour.de/Artikel" target>Artikel</a>
-	</center>	
+		</center>	
 
+		<center><br><br>
+			<div class=container>
+				<form action="insert-supplier.php" method="post">
+					<h3> Lieferanten hinzufügen</h3>
+					<table>
+						<tr>
+							<td>Name:</td>
+							<td><input type="text" name="name" >
+						</tr>
+
+						<tr>
+							<td>Webseite:</td>
+							<td><input type="text" name= "webseite" >
+						</tr>
+						<tr>
+							<td>Produkte:</td>
+							<td><input type="text" name="produkte" >
+						</tr>
+						
+						<tr>
+							<td>Ansprechpartner:</td>
+							<td><input type="text" name="ansprechpartner" >
+						</tr>
+
+						<tr>
+							<td>E-Mail:</td>
+							<td><input type="text" name="email" >
+						</tr>
+
+						<tr>
+							<td>Strasse:</td>
+							<td><input type="text"  name="strasse" >
+						</tr>				
+
+						<tr>
+							<td>Hausnummer:</td>
+							<td><input type="text"  name="hausnummer" >
+						</tr>
+
+						<tr>
+							<td>PLZ:</td>
+							<td><input type="text" name="plz" >
+						</tr>
+
+						<tr>
+							<td>Ort:</td>
+							<td><input type="text" name="ort" >
+						</tr>
+
+						<tr>
+							<td>Telefon:</td>
+							<td><input type="text" name="telefon" >
+						</tr>
+					</table><br>
+   					<input type="submit" name="submit" value="Hinzufügen">
+				</form>
+			</div>
+			</center>
 		
-<center><br><br>
-	<div class=container>
-		<form action="insert-supplier.php" method="post">
-			<h3> Lieferanten hinzufügen</h3>
-			<table>
-				<tr>
-					<td>Name:</td>
-					<td><input type="text" name="name" id="name">
-				</tr>
-
-				<tr>
-					<td>Webseite:</td>
-					<td><input type="text" name="webseite" id="webseite">
-				</tr>
-				<tr>
-					<td>Produkte:</td>
-					<td><input type="text" name="produkte" id="produkte">
-				</tr>
-				
-				<tr>
-					<td>Ansprechpartner:</td>
-					<td><input type="text" name="ansprechpartner" id="ansprechpartner">
-				</tr>
-
-				<tr>
-					<td>E-Mail:</td>
-					<td><input type="text" name="email" id="email">
-				</tr>
-
-				<tr>
-					<td>Strasse:</td>
-					<td><input type="text" name="strasse" id="strasse">
-				</tr>				
-
-				<tr>
-					<td>Hausnummer:</td>
-					<td><input type="text" name="hausnummer" id="hausnummer">
-				</tr>
-
-				<tr>
-					<td>PLZ:</td>
-					<td><input type="text" name="plz" id="plz">
-				</tr>
-
-				<tr>
-					<td>Ort:</td>
-					<td><input type="text" name="ort" id="ort">
-				</tr>
-
-				<tr>
-					<td>Telefon:</td>
-					<td><input type="text" name="telefon" id="telefon">
-				</tr>
-
-
-	
-</table><br>
-	
-    <input type="submit" name="submit" value="Hinzufügen">
-</form>
-		</div>
-	</center>
 			<br><br><br><br><br><br><br><br><br><br>
-		<br><br><br><br><br><br><br><br><br><br>
-	<br><br><br><br><br><br><br><br><br><br>
-		<br><br><br><br><br><br><br><br><br><br>
-	<br><br><br><br><br><br><br><br><br><br>
-		<br><br><br><br><br><br><br><br><br><br>
-	</div>
-
-</body>
+			<br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br><br>
+		</div>
+	</body>
 </html>
