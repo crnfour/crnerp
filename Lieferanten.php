@@ -32,7 +32,7 @@
 			<div class="list">
 				<br><br>
     			<ul>
-     			 	<li><a class="sansserif" href="https://localhost/crn-erp/Lieferanten-erstellen-form.php" target>Lieferanten anlegen</a></li>
+     			 	<li><a class="sansserif" href="https://localhost/crnerp/Lieferanten-erstellen-form.php" target>Lieferanten anlegen</a></li>
 					<li>Lieferanten suchen</li>
      			 	<li>Lieferanten bearbeiten</li>
      			 	<li>Lieferanten löschen</li>
@@ -80,7 +80,7 @@ while ($zeile = $db_erg -> fetch_array( MYSQLI_ASSOC))
   echo "<tr>";
   echo "<td>". $zeile['ID'] . "</td>";
   echo "<td>". $zeile['Lieferantennummer'] . "</td>";
-  echo "<td>". $zeile['Name'] . "</td>";
+  echo "<td>". $zeile['L_Name'] . "</td>";
   echo "<td>". $zeile['Website'] . "</td>";
   echo "<td>". $zeile['Produkte'] . "</td>";	
   echo "<td>". $zeile['Ansprechpartner'] . "</td>";

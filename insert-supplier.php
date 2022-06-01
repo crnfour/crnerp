@@ -82,7 +82,7 @@
 
 <?php
 
-$name = $_POST['name'];
+$l_name = $_POST['l_name'];
 $webseite = $_POST['webseite'];
 $produkte = $_POST['produkte'];
 $ansprechpartner = $_POST['ansprechpartner'];
@@ -120,7 +120,7 @@ $db_link->close();
 ?>
 		<br>
 		<div><center>
-		<a class="sansserif" href="https://localhost/crn-erp/Lieferanten.php" style="color:white" target> Zurück zu Lieferanten</a> 
+		<a class="sansserif" href="https://localhost/crnerp/Lieferanten.php" style="color:white" target> Zurück zu Lieferanten</a> 
 		<br>
 			</center>
 			</div>
