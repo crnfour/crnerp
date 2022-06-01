@@ -66,16 +66,16 @@ if ($db_link->connect_error) {
 
 
 <?php
-	$sql = "SELECT * FROM Lieferanten";
+$sql = "SELECT * FROM Lieferanten";
  
-$db_erg = mysqli_query( $db_link, $sql );
+$db_erg =  $db_link -> query($sql);
 if ( ! $db_erg )
 {
   die('Ungültige Abfrage: ' . mysqli_error());
 }
  
 echo '<table border="1">';
-while ($zeile = mysqli_fetch_array( $db_erg, MYSQLI_ASSOC))
+while ($zeile = $db_erg -> fetch_array( MYSQLI_ASSOC))
 {
   echo "<tr>";
   echo "<td>". $zeile['ID'] . "</td>";

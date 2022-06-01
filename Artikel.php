@@ -74,7 +74,7 @@ if ($db_link->connect_error) {
 
 $qry="SELECT ID, Artikel, Lieferant, Einzelpreis3, Lagerbestand FROM Artikel";
 
-$result =mysqli_query($db_link,$qry);
+$result = $db_link -> query($qry);
 
 
 
@@ -101,7 +101,7 @@ $preis = 0;
 // declare variable to store the total price addition in the while loop
 $summe_gesamtpreis = 0;
 
-while($rowval = mysqli_fetch_array($result))
+while($rowval = $result -> fetch_array(MYSQLI_ASSOC))
 	
   {
 
