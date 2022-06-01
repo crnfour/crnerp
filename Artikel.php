@@ -75,7 +75,10 @@ if ($db_link->connect_error) {
 $qry="SELECT ID, Artikel, Lieferant, Einzelpreis3, Lagerbestand FROM artikel";
 
 $result = $db_link -> query($qry);
-
+if ( ! $result )
+{
+  die('Ungültige Abfrage: ' . error());
+}
 
 
 echo "<table id=customers border='1'>

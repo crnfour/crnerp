@@ -71,7 +71,7 @@ $sql = "SELECT * FROM lieferanten";
 $db_erg =  $db_link -> query($sql);
 if ( ! $db_erg )
 {
-  die('Ungültige Abfrage: ' . mysqli_error());
+  die('Ungültige Abfrage: ' . error());
 }
  
 echo '<table border="1">';
