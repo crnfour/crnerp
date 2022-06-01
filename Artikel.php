@@ -72,7 +72,7 @@ if ($db_link->connect_error) {
 <?php
 
 
-$qry="SELECT ID, Artikel, Lieferant, Einzelpreis3, Lagerbestand FROM Artikel";
+$qry="SELECT ID, Artikel, Lieferant, Einzelpreis3, Lagerbestand FROM artikel";
 
 $result = $db_link -> query($qry);
 

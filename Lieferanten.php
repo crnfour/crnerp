@@ -66,7 +66,7 @@ if ($db_link->connect_error) {
 
 
 <?php
-$sql = "SELECT * FROM Lieferanten";
+$sql = "SELECT * FROM lieferanten";
  
 $db_erg =  $db_link -> query($sql);
 if ( ! $db_erg )
