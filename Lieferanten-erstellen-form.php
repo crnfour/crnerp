@@ -140,7 +140,7 @@
 							<td><input type="text" name="telefon" >
 						</tr>
 					</table><br>
-   					<input type="submit" name="submit" value="Hinzufügen">
+   					<input type="submit" name="hinzufügen" value="Hinzufügen">
 				</form>
 			</div>
 			</center>
