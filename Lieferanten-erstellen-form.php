@@ -81,9 +81,9 @@
 	<div class=hero-image>
 				<br> <br>
 		<center>
-		<a class=sansserif href="https://php.crnfour.de/" target=>Home</a>
-		<a class="sansserif" href="https://php.crnfour.de/Lieferanten" target>Lieferanten</a> 
-		<a class="sansserif" href="https://php.crnfour.de/Artikel" target>Artikel</a>
+		<a class="sansserif" href="https://localhost/crnerp/Lieferanten.php" target="_self">Lieferanten</a> 
+		<a class="sansserif" href="https://localhost/crnerp/Artikel.php" target="_self">Artikel</a>
+		<a class="sansserif" href="https://localhost/crnerp/GUV.php" target="_self">GUV</a>	
 		</center>	
 
 		<center><br><br>
@@ -92,8 +92,8 @@
 					<h3> Lieferanten hinzufügen</h3>
 					<table>
 						<tr>
-							<td>Name:</td>
-							<td><input type="text" name="name" >
+							<td>Lieferanten Name:</td>
+							<td><input type="text" name="l_name" >
 						</tr>
 
 						<tr>

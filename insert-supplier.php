@@ -104,7 +104,7 @@ if ($db_link->connect_error) {
     die("Connection failed: " . $db_link->connect_error);
 }
 
-$sql = "INSERT INTO Lieferanten (Name, Website, Produkte, Ansprechpartner, Email, Strasse, Hausnummer, PLZ, Ort, Telefon) VALUES ( '$name', '$webseite', '$produkte', '$ansprechpartner', '$email', '$strasse', '$hausnummer', '$plz', '$ort', '$telefon')";
+$sql = "INSERT INTO Lieferanten (L_Name, Website, Produkte, Ansprechpartner, Email, Strasse, Hausnummer, PLZ, Ort, Telefon) VALUES ( '$l_name', '$webseite', '$produkte', '$ansprechpartner', '$email', '$strasse', '$hausnummer', '$plz', '$ort', '$telefon')";
 
 $run = $db_link->query($sql);
 
