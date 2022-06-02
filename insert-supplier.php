@@ -83,7 +83,7 @@
 <?php
 
 $l_name = $_POST['l_name'];
-$webseite = $_POST['webseite'];
+$website = $_POST['website'];
 $produkte = $_POST['produkte'];
 $ansprechpartner = $_POST['ansprechpartner'];
 $email = $_POST['email'];
@@ -104,7 +104,7 @@ if ($db_link->connect_error) {
     die("Connection failed: " . $db_link->connect_error);
 }
 
-$sql = "INSERT INTO Lieferanten (L_Name, Website, Produkte, Ansprechpartner, Email, Strasse, Hausnummer, PLZ, Ort, Telefon) VALUES ( '$l_name', '$webseite', '$produkte', '$ansprechpartner', '$email', '$strasse', '$hausnummer', '$plz', '$ort', '$telefon')";
+$sql = "INSERT INTO lieferanten (L_Name, Website, Produkte, Ansprechpartner, Email, Strasse, Hausnummer, PLZ, Ort, Telefon) VALUES ( '$l_name', '$website', '$produkte', '$ansprechpartner', '$email', '$strasse', '$hausnummer', '$plz', '$ort', '$telefon')";
 
 $run = $db_link->query($sql);
 

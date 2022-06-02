@@ -98,7 +98,7 @@
 
 						<tr>
 							<td>Webseite:</td>
-							<td><input type="text" name="webseite" >
+							<td><input type="text" name="website" >
 						</tr>
 						<tr>
 							<td>Produkte:</td>
