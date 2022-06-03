@@ -20,11 +20,11 @@
 	<div class="hero-image">
 		<center>
 		<br>
-		<a class="sansserif" href="https://localhost/crn-erp/index.htm" target="_self">Home</a>
-		<a class="sansserif" href="https://localhost/crn-erp/dashboard.php" target="_self">Dashboard</a>
-		<a class="sansserif" href="https://localhost/crn-erp/Lieferanten.php" target="_self">Lieferanten</a> 
-		<a class="sansserif" href="https://localhost/crn-erp/Artikel.php" target="_self">Artikel</a>
-		<a class="sansserif" href="https://localhost/crn-erp/GUV.php" target="_self">GUV</a>	
+		<a class="sansserif" href="https://localhost/crnerp/index.htm" target="_self">Home</a>
+		<a class="sansserif" href="https://localhost/crnerp/dashboard.php" target="_self">Dashboard</a>
+		<a class="sansserif" href="https://localhost/crnerp/Lieferanten.php" target="_self">Lieferanten</a> 
+		<a class="sansserif" href="https://localhost/crnerp/Artikel.php" target="_self">Artikel</a>
+		<a class="sansserif" href="https://localhost/crnerp/GUV.php" target="_self">GUV</a>	
 
 	<div class="row">
 	   <div class="col-2 col-s-12 menu">
@@ -32,7 +32,7 @@
 			<div class="list">
 				<br><br>
     			<ul>
-     			 	<li><a class="sansserif" href="https://localhost/crn-erp/Lieferanten-erstellen-form.php" target>Lieferanten anlegen</a></li>
+     			 	<li><a class="sansserif" href="https://localhost/crnerp/Lieferanten-erstellen-form.php" target>Lieferanten anlegen</a></li>
 					<li>Lieferanten suchen</li>
      			 	<li>Lieferanten bearbeiten</li>
      			 	<li>Lieferanten löschen</li>
@@ -71,7 +71,7 @@ $sql = "SELECT * FROM lieferanten";
 $db_erg =  $db_link -> query($sql);
 if ( ! $db_erg )
 {
-  die('Ungültige Abfrage: ' . mysqli_error());
+  die('Ungültige Abfrage: ' . error());
 }
  
 echo '<table border="1">';
@@ -80,7 +80,7 @@ while ($zeile = $db_erg -> fetch_array( MYSQLI_ASSOC))
   echo "<tr>";
   echo "<td>". $zeile['ID'] . "</td>";
   echo "<td>". $zeile['Lieferantennummer'] . "</td>";
-  echo "<td>". $zeile['Name'] . "</td>";
+  echo "<td>". $zeile['L_Name'] . "</td>";
   echo "<td>". $zeile['Website'] . "</td>";
   echo "<td>". $zeile['Produkte'] . "</td>";	
   echo "<td>". $zeile['Ansprechpartner'] . "</td>";

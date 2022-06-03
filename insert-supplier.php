@@ -82,8 +82,8 @@
 
 <?php
 
-$name = $_POST['name'];
-$webseite = $_POST['webseite'];
+$l_name = $_POST['l_name'];
+$website = $_POST['website'];
 $produkte = $_POST['produkte'];
 $ansprechpartner = $_POST['ansprechpartner'];
 $email = $_POST['email'];
@@ -104,10 +104,12 @@ if ($db_link->connect_error) {
     die("Connection failed: " . $db_link->connect_error);
 }
 
-$sql = "INSERT INTO Lieferanten (Name, Website, Produkte, Ansprechpartner, Email, Strasse, Hausnummer, PLZ, Ort, Telefon) VALUES ( '$name', '$webseite', '$produkte', '$ansprechpartner', '$email', '$strasse', '$hausnummer', '$plz', '$ort', '$telefon')";
+$sql = "INSERT INTO lieferanten (L_Name, Website, Produkte, Ansprechpartner, Email, Strasse, Hausnummer, PLZ, Ort, Telefon) VALUES ( '$l_name', '$website', '$produkte', '$ansprechpartner', '$email', '$strasse', '$hausnummer', '$plz', '$ort', '$telefon')";
+
+$run = mysqli_query ($db_link,$sql);
 
 if ($db_link->query($sql) === TRUE) {
-  echo "Neuer Lieferant erfolgreich angelegt:";
+  echo "Neuer Lieferant erfolgreich angelegt ";
 } 
 else {
   echo "Error: " . $sql . "<br>" . $db_link->error;
@@ -118,7 +120,7 @@ $db_link->close();
 ?>
 		<br>
 		<div><center>
-		<a class="sansserif" href="https://localhost/crn-erp/Lieferanten.php" style="color:white" target> Zurück zu Lieferanten</a> 
+		<a class="sansserif" href="https://localhost/crnerp/Lieferanten.php" style="color:white" target> Zurück zu Lieferanten</a> 
 		<br>
 			</center>
 			</div>

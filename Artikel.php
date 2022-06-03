@@ -20,11 +20,11 @@
 	<div class="hero-image">
 		<center>
 		<br>
-		<a class="sansserif" href="https://localhost/crn-erp/index.htm" target="_self">Home</a>
-		<a class="sansserif" href="https://localhost/crn-erp/dashboard.php" target="_self">Dashboard</a>
-		<a class="sansserif" href="https://localhost/crn-erp/Lieferanten.php" target="_self">Lieferanten</a> 
-		<a class="sansserif" href="https://localhost/crn-erp/Artikel.php" target="_self">Artikel</a>
-		<a class="sansserif" href="https://localhost/crn-erp/GUV.php" target="_self">GUV</a>	
+		<a class="sansserif" href="https://localhost/crnerp/index.htm" target="_self">Home</a>
+		<a class="sansserif" href="https://localhost/crnerp/dashboard.php" target="_self">Dashboard</a>
+		<a class="sansserif" href="https://localhost/crnerp/Lieferanten.php" target="_self">Lieferanten</a> 
+		<a class="sansserif" href="https://localhost/crnerp/Artikel.php" target="_self">Artikel</a>
+		<a class="sansserif" href="https://localhost/crnerp/GUV.php" target="_self">GUV</a>	
 			
 <div class="row">
 	   <div class="col-2 col-s-12 menu">
@@ -75,7 +75,10 @@ if ($db_link->connect_error) {
 $qry="SELECT ID, Artikel, Lieferant, Einzelpreis3, Lagerbestand FROM artikel";
 
 $result = $db_link -> query($qry);
-
+if ( ! $result )
+{
+  die('Ungültige Abfrage: ' . error());
+}
 
 
 echo "<table id=customers border='1'>
