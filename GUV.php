@@ -60,12 +60,14 @@
 <?php
 
 /// CONNECT TO DATABASE
-$hostname="localhost"; //// specify host, i.e. 'localhost'
-$user="root"; //// specify username
-$pass=""; //// specify password
-$dbase="crnerp_v04"; //// specify database name
+require_once ('konfiguration.php');
 $db_link = new mysqli($hostname, $user, $pass, $dbase);
-	if ($db_link->connect_error) {
+
+/// UTF8 für Umlaute
+mysqli_set_charset($db_link, 'utf8');
+
+///Display error if connection failed
+if ($db_link->connect_error) {
 	die("Connection failed: " . $db_link->connect_error);
 	}
 
