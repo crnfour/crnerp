@@ -106,10 +106,8 @@ if ($db_link->connect_error) {
 
 $sql = "INSERT INTO Lieferanten (Name, Website, Produkte, Ansprechpartner, Email, Strasse, Hausnummer, PLZ, Ort, Telefon) VALUES ( '$name', '$webseite', '$produkte', '$ansprechpartner', '$email', '$strasse', '$hausnummer', '$plz', '$ort', '$telefon')";
 
-$run = $db_link->query($sql);
-
 if ($db_link->query($sql) === TRUE) {
-  echo "Neuer Lieferant erfolgreich angelegt ";
+  echo "Neuer Lieferant erfolgreich angelegt:";
 } 
 else {
   echo "Error: " . $sql . "<br>" . $db_link->error;
