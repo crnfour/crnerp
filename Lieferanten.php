@@ -78,8 +78,8 @@ echo '<table border="1">';
 while ($zeile = $db_erg -> fetch_array( MYSQLI_ASSOC))
 {
   echo "<tr>";
+  echo "<td> <input type= 'checkbox' name= 'auswahl' > </td>";
   echo "<td>". $zeile['ID'] . "</td>";
-  echo "<td>". $zeile['Lieferantennummer'] . "</td>";
   echo "<td>". $zeile['L_Name'] . "</td>";
   echo "<td>". $zeile['Website'] . "</td>";
   echo "<td>". $zeile['Produkte'] . "</td>";	
