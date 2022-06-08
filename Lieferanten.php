@@ -26,14 +26,14 @@
 		<a class="sansserif" href="https://localhost/crnerp/Artikel.php" target="_self">Artikel</a>
 		<a class="sansserif" href="https://localhost/crnerp/GUV.php" target="_self">GUV</a>	
 			<div class="row">
-				
+
 				<div class="col-2 col-s-12 menu">	 
 					<div class="list">
 						<br><br>
 						<ul>
 							<li><a class="sansserif" href="https://localhost/crnerp/Lieferanten-erstellen-form.php" target>Lieferanten anlegen</a></li>
 							<li>Lieferanten suchen</li>
-							<li> <input type="submit" name="bearbeiten" formaction="Lieferanten-bearbeiten-form.php" value="Lieferanten bearbeiten"></li>
+							<li>Lieferanten bearbeiten</li>
 							<li>Lieferanten löschen</li>
 							<li>...</li>
 						</ul>
@@ -96,7 +96,7 @@
 					<input type="submit" name="bearbeiten" formaction="Lieferanten-bearbeiten-form.php" value="Lieferanten bearbeiten">
 					</p>
 				</div>		
-							
+
 			</div>
 		</div>
 		</center>
