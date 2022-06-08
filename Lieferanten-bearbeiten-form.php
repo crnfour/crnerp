@@ -122,71 +122,61 @@
 
         
 
-        // 5. Das Bearbeiten-Formular anzeigen
-        echo "<center><br><br>";
-        echo "<div class=container>";
-            echo "<form action="Lieferanten-bearbeiten-form.php" method="post">";
-                echo "<h3> Lieferanten bearbeiten</h3>";
-                echo "<table>
-                    <tr>
-                        <td>Lieferanten Name:</td>
-                        <td><input type="text" name="l_name" value='l_name' >
-                    </tr>
+            // 5. Das Bearbeiten-Formular anzeigen
+            echo "<center><br><br>";
+            echo "<div class=container>";
+            echo "<form action='Lieferanten-bearbeiten-form.php' method='post'>";
+            echo "<input name='id' type='hidden' value='$id'>";
+            echo "<p><input name='l_name' value='$l_name'> Lieferanten Name</p>";
+            echo "<p><input name='website' value='$website'> Website</p>";
+            echo "<p><input name='produkte' value='$produkte'> Produkte</p>";
+            echo "<p><input name='ansprechpartner' value='$ansprechpartner'> Anprechpartner</p>";
+            echo "<p><input name='email' value='$email'> E-Mail</p>";
+            echo "<p><input name='strasse' value='$strasse'> Strasse</p>";
+            echo "<p><input name='hausnummer' value='$hausnummer'> Hausnummer</p>";
+            echo "<p><input name='plz' value='$plz'> PLZ</p>";
+            echo "<p><input name='ort' value='$ort'> Ort</p>";
+            echo "<p><input name='telefon' value='$telefon'> Telefon</p>";
+            echo "<input name='bearbeitungAbschicken' value='Bearbeitung abschließen' type='submit'>";
+            echo "</form>";
+        
+            echo "<a href='lieferanten.php'>zurück zur Übersicht</a>";
+        }
 
-                    <tr>
-                        <td>Webseite:</td>
-                        <td><input type="text" name="website" >
-                    </tr>
-                    <tr>
-                        <td>Produkte:</td>
-                        <td><input type="text" name="produkte" >
-                    </tr>
-                    
-                    <tr>
-                        <td>Ansprechpartner:</td>
-                        <td><input type="text" name="ansprechpartner" >
-                    </tr>
+        //6. Datensatz aktualisieren mit UPDATE
+        if(isset($_POST["bearbeitungAbschicken"])){
+            $id = $_POST["id"];
+            $l_name = $_POST["l_name"];
+            $website = $_POST['website'];
+            $produkte = $_POST['produkte'];
+            $ansprechpartner = $_POST['ansprechpartner'];
+            $email = $_POST['email'];
+            $strasse = $_POST['strasse'];
+            $hausnummer = $_POST['hausnummer'];
+            $plz = $_POST['plz'];
+            $ort = $_POST['ort'];
+            $telefon = $_POST['telefon'];
+        
+        //String für Update-Anweisung erstellen
+        $update = "UPDATE lieferanten SET
+        l_name ='$l_name',
+        website ='$website',
+        produkte ='$produkte',
+        ansprechpartner ='$ansprechpartner'
+        email ='$email',
+        strasse ='$strasse',
+        hausnumer ='$hausnummer',
+        plz ='$plz',
+        ort ='$ort',
+        telefon ='$telefon',
+        WHERE id = $id";
 
-                    <tr>
-                        <td>E-Mail:</td>
-                        <td><input type="text" name="email" >
-                    </tr>
+        //MySQL-Anweisung ausführen
+            mysqli_query($db_link, $update);
 
-                    <tr>
-                        <td>Strasse:</td>
-                        <td><input type="text"  name="strasse" >
-                    </tr>				
-
-                    <tr>
-                        <td>Hausnummer:</td>
-                        <td><input type="text"  name="hausnummer" >
-                    </tr>
-
-                    <tr>
-                        <td>PLZ:</td>
-                        <td><input type="text" name="plz" >
-                    </tr>
-
-                    <tr>
-                        <td>Ort:</td>
-                        <td><input type="text" name="ort" >
-                    </tr>
-
-                    <tr>
-                        <td>Telefon:</td>
-                        <td><input type="text" name="telefon" >
-                    </tr>
-                </table><br>
-                   <input type="submit" name="hinzufügen" value="Hinzufügen">
-            </form>
-            </div>
-            </center>
-            }
-
-
-
-
-
+            echo "Datensatz bearbeitet.<br>";
+            echo "<a href='lieferanten.php'>zurück zur Übersicht</a>";
+        }
 
         //Wenn der Nutzer in Lieferanten.php keine Auswahl getroffen hat:
         if(!isset($_POST["auswahl"]) && !isset($_POST["bearbeitungAbschicken"])){

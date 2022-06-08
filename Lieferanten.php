@@ -34,7 +34,7 @@
     			<ul>
      			 	<li><a class="sansserif" href="https://localhost/crnerp/Lieferanten-erstellen-form.php" target>Lieferanten anlegen</a></li>
 					<li>Lieferanten suchen</li>
-     			 	<li>Lieferanten bearbeiten</li>
+     			 	<li><a class="sansserif" href="https://localhost/crnerp/Lieferanten-bearbeiten-form.php" target>Lieferanten bearbeiten</a></li>
      			 	<li>Lieferanten löschen</li>
 	  			 	<li>...</li>
    				</ul>
