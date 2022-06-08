@@ -34,7 +34,7 @@
     			<ul>
      			 	<li><a class="sansserif" href="https://localhost/crnerp/Lieferanten-erstellen-form.php" target>Lieferanten anlegen</a></li>
 					<li>Lieferanten suchen</li>
-     			 	<li><a class="sansserif" href="https://localhost/crnerp/Lieferanten-bearbeiten-form.php" target>Lieferanten bearbeiten</a></li>
+     			 	<li><a class="sansserif"> <input type="submit" name="bearbeiten" formaction="Lieferanten-bearbeiten-form.php" value="Lieferanten bearbeiten"> </a></li>
      			 	<li>Lieferanten löschen</li>
 	  			 	<li>...</li>
    				</ul>
@@ -78,7 +78,8 @@ echo '<table border="1">';
 while ($zeile = $db_erg -> fetch_array( MYSQLI_ASSOC))
 {
   echo "<tr>";
-  echo "<td> <input type= 'checkbox' name= 'auswahl' > </td>";
+  $id = $zeile["ID"];
+  echo "<td> <input type= 'radio' name='auswahl' value='$id'> </td>";
   echo "<td>". $zeile['ID'] . "</td>";
   echo "<td>". $zeile['L_Name'] . "</td>";
   echo "<td>". $zeile['Website'] . "</td>";
