@@ -66,6 +66,7 @@
 						die('Ungültige Abfrage: ' . error());
 						}
 						
+						echo "<form method='post'>";
 						echo '<table border="1">';
 						while ($zeile = $db_erg -> fetch_array( MYSQLI_ASSOC))
 						{
@@ -92,9 +93,11 @@
 					</div>	
 
 				<div class="container_2">
+					<form>	
 					<p> 
-					<input type="submit" name="bearbeiten" formaction="Lieferanten-bearbeiten-form.php" value="Lieferanten bearbeiten">
+					<input type="submit" name="bearbeiten" formaction="https://localhost/crnerp/Lieferanten-bearbeiten-form.php" value="Lieferanten bearbeiten">
 					</p>
+					</form>
 				</div>		
 
 			</div>
