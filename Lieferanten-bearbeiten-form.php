@@ -103,13 +103,18 @@
 
             // 3. Datenbankabfrage starten
             $id = $_POST["auswahl"];
-            $abfrage = "SELECT * FROM lieferanten WHERE id = $id";
-            $result = mysqli_query($db_link, $abfrage);
+            $abfrage = "SELECT * FROM lieferanten WHERE ID = $id";
+            $result = mysqli_query( $db_link, $abfrage);
 
             // 4. Datensatz in Variablen speichern
             $dsatz = mysqli_fetch_assoc($result);
-            $id = $dsatz['ID'];
-            $l_name = $dsatz['l_name'];
+            
+
+
+            $l_name = $dsatz['l_name'];  
+            
+            echo " $l_name ";
+
             $website = $dsatz['website'];
             $produkte = $dsatz['produkte'];
             $ansprechpartner = $dsatz['ansprechpartner'];
@@ -127,6 +132,9 @@
             echo "<div class=container>";
             echo "<form action='Lieferanten-bearbeiten-form.php' method='post'>";
             echo "<input name='id' type='hidden' value='$id'>";
+
+            echo "<p><input name='ID' value='$id'> ID</p>";
+
             echo "<p><input name='l_name' value='$l_name'> Lieferanten Name</p>";
             echo "<p><input name='website' value='$website'> Website</p>";
             echo "<p><input name='produkte' value='$produkte'> Produkte</p>";

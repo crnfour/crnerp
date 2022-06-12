@@ -68,11 +68,13 @@
 						
 						echo "<form method='post'>";
 						echo '<table border="1">';
+
 						while ($zeile = $db_erg -> fetch_array( MYSQLI_ASSOC))
 						{
 						echo "<tr>";
 						$id = $zeile["ID"];
 						echo "<td> <input type= 'radio' name='auswahl' value='$id'> </td>";
+						echo "<td>". $id . "</td>";
 						echo "<td>". $zeile['ID'] . "</td>";
 						echo "<td>". $zeile['L_Name'] . "</td>";
 						echo "<td>". $zeile['Website'] . "</td>";
