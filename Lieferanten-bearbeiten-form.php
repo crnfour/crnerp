@@ -104,26 +104,24 @@
             // 3. Datenbankabfrage starten
             $id = $_POST["auswahl"];
             $abfrage = "SELECT * FROM lieferanten WHERE ID = $id";
-            $result = mysqli_query( $db_link, $abfrage);
+            $result = $db_link -> query( $abfrage);
+       
+
+            // Undefined index set as blank
+            $l_name = isset($_POST['auswahl']) ? $_POST['auswahl'] : '';
 
             // 4. Datensatz in Variablen speichern
-            $dsatz = mysqli_fetch_assoc($result);
-            
-
-
-            $l_name = $dsatz['l_name'];  
-            
-            echo " $l_name ";
-
-            $website = $dsatz['website'];
-            $produkte = $dsatz['produkte'];
-            $ansprechpartner = $dsatz['ansprechpartner'];
-            $email = $dsatz['email'];
-            $strasse = $dsatz['strasse'];
-            $hausnummer = $dsatz['hausnummer'];
-            $plz = $dsatz['plz'];
-            $ort = $dsatz['ort'];
-            $telefon = $dsatz['telefon'];
+            $dsatz = $result -> fetch_array(MYSQLI_ASSOC);
+            $l_name = $dsatz['L_Name'];  
+            $website = $dsatz['Website'];
+            $produkte = $dsatz['Produkte'];
+            $ansprechpartner = $dsatz['Ansprechpartner'];
+            $email = $dsatz['Email'];
+            $strasse = $dsatz['Strasse'];
+            $hausnummer = $dsatz['Hausnummer'];
+            $plz = $dsatz['PLZ'];
+            $ort = $dsatz['Ort'];
+            $telefon = $dsatz['Telefon'];
 
         
 
@@ -151,9 +149,12 @@
             echo "<a href='lieferanten.php'>zurück zur Übersicht</a>";
         }
 
+
+
+
         //6. Datensatz aktualisieren mit UPDATE
         if(isset($_POST["bearbeitungAbschicken"])){
-            $id = $_POST["id"];
+            $id = $_POST["ID"];
             $l_name = $_POST["l_name"];
             $website = $_POST['website'];
             $produkte = $_POST['produkte'];
@@ -167,16 +168,16 @@
         
         //String für Update-Anweisung erstellen
         $update = "UPDATE lieferanten SET
-        l_name ='$l_name',
-        website ='$website',
-        produkte ='$produkte',
-        ansprechpartner ='$ansprechpartner'
-        email ='$email',
-        strasse ='$strasse',
-        hausnumer ='$hausnummer',
-        plz ='$plz',
-        ort ='$ort',
-        telefon ='$telefon',
+        L_Name ='$l_name',
+        Website ='$website',
+        Produkte ='$produkte',
+        Ansprechpartner ='$ansprechpartner'
+        Email ='$email',
+        Strasse ='$strasse',
+        Hausnumer ='$hausnummer',
+        PLZ ='$plz',
+        Ort ='$ort',
+        Telefon ='$telefon',
         WHERE id = $id";
 
         //MySQL-Anweisung ausführen
