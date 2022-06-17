@@ -13,69 +13,8 @@
 		<link rel="stylesheet" type="text/css" href="font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="w3-4-15.css">
 	
-	
-		<style type="text/css">
-
-		
-	.sansserif {
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-}
-	
-		
-	body {
-		color: #ffffff;
-		background-color: #eaecee; 	
-	}
-.container {
-
-      width: 80%;
-      height: 50%;
-      background-color: #000000  ; 
-	  border: 10px solid  #ffffff ;
-      border-radius: 16px;
-	  padding: 10px;
-      margin: 10px;
-	  display: flex;
-      justify-content: center;
-	  align-items: center;
-	  
-	}
-		
- .centered_element { 
-	  float: left;
-	  width: 30%;
-      height: 20%;
-      background-color: #ffffff  ; 
-	  border: 10px solid  #000000 
-      border-radius: 16px;
-	  padding: 10px;
-      margin: 10px;
-	 
-	}
-	a {
-  		color: #424242;
-		padding-right: 10px;
-		word-spacing: norman;
-	}
-
-	table, th, td {
-  
-		border: 1px solid #ddd;
-		
-  		text-align: left;
-        }
-	table {
-       border-collapse: collapse;
-	   border-radius: 2em
-       width: 80%;
-       }
-	 th, td {
- 	   padding: 15px;
-	}
-		
-  </style>
-	
-	
+	<style type="text/css">
+	</style>
 	
 </head>
 <body>

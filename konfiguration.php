@@ -13,5 +13,4 @@ $hostname="localhost"; //// specify host, i.e. 'localhost'
 $user="root"; //// specify username
 $pass=""; //// specify password
 $dbase="crnerp_v04"; //// specify database name
-
 ?>
