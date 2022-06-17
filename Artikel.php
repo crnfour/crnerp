@@ -5,7 +5,8 @@
 <title>Artikel</title> 
 	
 <meta name="viewport" content="width=device-width, charset=UTF-8, initial-scale=1.0">
-	
+<meta charset="UTF-8"> 
+
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 <link rel="stylesheet" type="text/css" href="dashboard-css.css">
 <link rel="stylesheet" type="text/css" href="font-awesome.min.css">

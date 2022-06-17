@@ -3,6 +3,7 @@
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
+<meta charset="UTF-8"> 
 
 <title>Lieferanten bearbeiten</title>
 	
@@ -204,14 +205,14 @@
 						}
 
                 echo "Datensatz bearbeitet.<br>";
-                echo "<a href='lieferanten.php'>zurück zur Übersicht</a>";
+                echo "<a href='Lieferanten.php'>zurück zur Übersicht</a>";
             }
 
         //Wenn der Nutzer in Lieferanten.php keine Auswahl getroffen hat:
         if(!isset($_POST["auswahl"]) && !isset($_POST["bearbeitungAbschicken"]))
         {
         echo "Es wurde kein Datensatz ausgewählt.<br>";
-        echo "<a href='lieferanten.php'>zurück zur Übersicht</a>";
+        echo "<a href='Lieferanten.php'>zurück zur Übersicht</a>";
         }
 
 
