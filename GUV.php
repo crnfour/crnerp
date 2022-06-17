@@ -20,11 +20,11 @@
 	<div class="hero-image">
 		<center>
 		<br>
-		<a class="sansserif" href="https://localhost/crnerp/index.htm" target="_self">Home</a>
-		<a class="sansserif" href="https://localhost/crnerp/dashboard.php" target="_self">Dashboard</a>
-		<a class="sansserif" href="https://localhost/crnerp/Lieferanten.php" target="_self">Lieferanten</a> 
-		<a class="sansserif" href="https://localhost/crnerp/Artikel.php" target="_self">Artikel</a>
-	    <a class="sansserif" href="https://localhost/crnerp/GUV.php" target="_self">GUV</a>	
+		<a class="sansserif" href="index.htm" target="_self">Home</a>
+		<a class="sansserif" href="dashboard.php" target="_self">Dashboard</a>
+		<a class="sansserif" href="Lieferanten.php" target="_self">Lieferanten</a> 
+		<a class="sansserif" href="Artikel.php" target="_self">Artikel</a>
+	    <a class="sansserif" href="GUV.php" target="_self">GUV</a>	
 			
 <div class="row">
 	   <div class="col-2 col-s-12 menu">

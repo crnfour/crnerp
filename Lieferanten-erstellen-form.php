@@ -81,9 +81,9 @@
 	<div class=hero-image>
 				<br> <br>
 		<center>
-		<a class="sansserif" href="https://localhost/crnerp/Lieferanten.php" target="_self">Lieferanten</a> 
-		<a class="sansserif" href="https://localhost/crnerp/Artikel.php" target="_self">Artikel</a>
-		<a class="sansserif" href="https://localhost/crnerp/GUV.php" target="_self">GUV</a>	
+		<a class="sansserif" href="Lieferanten.php" target="_self">Lieferanten</a> 
+		<a class="sansserif" href="Artikel.php" target="_self">Artikel</a>
+		<a class="sansserif" href="GUV.php" target="_self">GUV</a>	
 		</center>	
 
 		<center><br><br>

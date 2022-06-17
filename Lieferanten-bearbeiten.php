@@ -20,21 +20,21 @@
 		<div class="hero-image">
 		<center>
 		<br>
-		<a class="sansserif" href="https://localhost/crnerp/index.htm" target="_self">Home</a>
-		<a class="sansserif" href="https://localhost/crnerp/dashboard.php" target="_self">Dashboard</a>
-		<a class="sansserif" href="https://localhost/crnerp/Lieferanten.php" target="_self">Lieferanten</a> 
-		<a class="sansserif" href="https://localhost/crnerp/Artikel.php" target="_self">Artikel</a>
-		<a class="sansserif" href="https://localhost/crnerp/GUV.php" target="_self">GUV</a>	
+		<a class="sansserif" href="index.htm" target="_self">Home</a>
+		<a class="sansserif" href="dashboard.php" target="_self">Dashboard</a>
+		<a class="sansserif" href="Lieferanten.php" target="_self">Lieferanten</a> 
+		<a class="sansserif" href="Artikel.php" target="_self">Artikel</a>
+		<a class="sansserif" href="GUV.php" target="_self">GUV</a>	
 			<div class="row">
 
 				<div class="col-2 col-s-12 menu">	 
 					<div class="list">
 						<br><br>
 						<ul>
-							<li><a class="sansserif" href="https://localhost/crnerp/Lieferanten-erstellen-form.php" target>Lieferanten anlegen</a></li>
+							<li><a class="sansserif" href="Lieferanten-erstellen-form.php" target>Lieferanten anlegen</a></li>
 							<li>Lieferanten suchen</li>
-							<li><a class="sansserif" href="https://localhost/crnerp/Lieferanten-bearbeiten.php" target>Lieferanten bearbeiten</a> </li>
-							<li><a class="sansserif" href="https://localhost/crnerp/Lieferanten-loeschen.php" target>Lieferanten löschen</a></li>
+							<li><a class="sansserif" href="Lieferanten-bearbeiten.php" target>Lieferanten bearbeiten</a> </li>
+							<li><a class="sansserif" href="Lieferanten-loeschen.php" target>Lieferanten löschen</a></li>
 							<li>...</li>
 						</ul>
 					</div>				
@@ -96,7 +96,7 @@
 				<div class="container_2">
 					<form>	
 					<p> 
-					<input type="submit" name="bearbeiten" formaction="https://localhost/crnerp/Lieferanten-update-form.php" value="Lieferanten bearbeiten">
+					<input type="submit" name="bearbeiten" formaction="Lieferanten-update-form.php" value="Lieferanten bearbeiten">
 					</p>
 					</form>
 				</div>		

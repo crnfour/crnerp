@@ -118,7 +118,7 @@ $db_link->close();
 ?>
 		<br>
 		<div><center>
-		<p><a class="sansserif" href="https://localhost/crnerp/Lieferanten.php" style="color:white" target> Zurück zu Lieferanten</p></a> 
+		<p><a class="sansserif" href="Lieferanten.php" style="color:white" target> Zurück zu Lieferanten</p></a> 
 		
 		</center>
 		</div>
