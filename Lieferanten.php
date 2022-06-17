@@ -74,7 +74,6 @@
 						echo "<tr>";
 						$id = $zeile["ID"];
 						echo "<td> <input type= 'radio' name='auswahl' value='$id'> </td>";
-						echo "<td>". $id . "</td>";
 						echo "<td>". $zeile['ID'] . "</td>";
 						echo "<td>". $zeile['L_Name'] . "</td>";
 						echo "<td>". $zeile['Website'] . "</td>";

@@ -97,7 +97,8 @@
 		<a class="sansserif" href="https://localhost/crnerp/Artikel.php" target="_self">Artikel</a>
 		<a class="sansserif" href="https://localhost/crnerp/GUV.php" target="_self">GUV</a>	
 		</center>	
-        
+
+        <div class="row">
 
         <?php
 
@@ -188,10 +189,10 @@
             Ansprechpartner ='$ansprechpartner',
             Email ='$email',
             Strasse ='$strasse',
-            Hausnumer ='$hausnummer',
+            Hausnummer ='$hausnummer',
             PLZ ='$plz',
             Ort ='$ort',
-            Telefon ='$telefon',
+            Telefon ='$telefon'
             WHERE ID = $id";
 
             //MySQL-Anweisung ausführen
@@ -219,11 +220,13 @@
         ?>
 
 
-            <br><br>    
+            <br><br>            
 
+
+            </div>
 
         </div>
         <br><br> <br><br> <br><br> <br><br> 
-        <br><br> <br><br> <br><br> <br><br> 
+        <br><br> <br><br> <br><br> <br><br>
     </body>
 </html>
