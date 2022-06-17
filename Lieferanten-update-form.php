@@ -145,7 +145,7 @@
             
             echo "<div class=container>";
             echo "<div class=container_left>";
-            echo "<form action='Lieferanten-bearbeiten-form.php' method='post'>";
+            echo "<form action='Lieferanten-update-form.php' method='post'>";
             echo "<input name='id' type='hidden' value='$id'>";
             echo "<p><tr><input name='l_name' value='$l_name'> Lieferanten Name</tr></p>";
             echo "<p><tr><input name='website' value='$website'> Website</tr></p>";

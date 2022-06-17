@@ -33,7 +33,7 @@
 						<ul>
 							<li><a class="sansserif" href="https://localhost/crnerp/Lieferanten-erstellen-form.php" target>Lieferanten anlegen</a></li>
 							<li>Lieferanten suchen</li>
-							<li><a class="sansserif" href="https://localhost/crnerp/Lieferanten-bearbeiten.php" target>Lieferanten bearbeiten</a> </li>
+							<li><a class="sansserif" href="https://localhost/crnerp/Lieferanten-bearbeiten-form.php" target>Lieferanten bearbeiten</a> </li>
 							<li>Lieferanten löschen</li>
 							<li>...</li>
 						</ul>
@@ -73,7 +73,7 @@
 						{
 						echo "<tr>";
 						$id = $zeile["ID"];
-
+						echo "<td> <input type= 'radio' name='auswahl' value='$id'> </td>";
 						echo "<td>". $zeile['ID'] . "</td>";
 						echo "<td>". $zeile['L_Name'] . "</td>";
 						echo "<td>". $zeile['Website'] . "</td>";
@@ -96,7 +96,7 @@
 				<div class="container_2">
 					<form>	
 					<p> 
-					<input type="submit" name="bearbeiten" formaction="https://localhost/crnerp/Lieferanten-bearbeiten-form.php" value="Lieferanten bearbeiten">
+					<input type="submit" name="bearbeiten" formaction="https://localhost/crnerp/Lieferanten-update-form.php" value="Lieferanten bearbeiten">
 					</p>
 					</form>
 				</div>		
