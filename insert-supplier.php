@@ -118,10 +118,10 @@ $db_link->close();
 ?>
 		<br>
 		<div><center>
-		<a class="sansserif" href="https://localhost/crnerp/Lieferanten.php" style="color:white" target> Zurück zu Lieferanten</a> 
-		<br>
-			</center>
-			</div>
+		<p><a class="sansserif" href="https://localhost/crnerp/Lieferanten.php" style="color:white" target> Zurück zu Lieferanten</p></a> 
+		
+		</center>
+		</div>
 		
 	</div>
 		

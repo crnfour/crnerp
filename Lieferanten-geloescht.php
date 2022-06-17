@@ -2,7 +2,7 @@
 <html> 
 <head>
 	
-<title>Lieferanten bearbeiten</title> 	
+<title>Lieferanten geloescht</title> 	
 	
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
@@ -42,7 +42,7 @@
 			
 				<div class="col-10 col-s-12 menu">	
 					<div class="container_2">
-						<h1 class="sansserif">Lieferanten bearbeiten</h1>
+						<h1 class="sansserif">Lieferanten gelöscht</h1>
 					</div> 
 
 					<div class="table_container" style="overflow-x:auto;">	
@@ -57,53 +57,39 @@
 						if ($db_link->connect_error) {
 							die("Connection failed: " . $db_link->connect_error);
 						}
-
-						$sql = "SELECT * FROM lieferanten";
-						
-						$db_erg =  $db_link -> query($sql);
-						if ( ! $db_erg )
-						{
-						die('Ungültige Abfrage: ' . error());
+					
+						//Ausgewählte Datensätze löschen:
+						for($i=6000000; $i<=6009999; $i++){
+							if(isset($_POST["auswahl$i"])){
+								$deleteAnweisung = "DELETE FROM lieferanten WHERE ID=$i";
+								$result = mysqli_query($db_link, $deleteAnweisung);
+								echo "Datensatz mit der ID $i wurde gelöscht. <br>";
+							}
 						}
-						
-						echo "<form method='post'>";
-						echo '<table border="1">';
 
-						while ($zeile = $db_erg -> fetch_array( MYSQLI_ASSOC))
-						{
-						echo "<tr>";
-						$id = $zeile["ID"];
-						echo "<td> <input type= 'radio' name='auswahl' value='$id'> </td>";
-						echo "<td>". $zeile['ID'] . "</td>";
-						echo "<td>". $zeile['L_Name'] . "</td>";
-						echo "<td>". $zeile['Website'] . "</td>";
-						echo "<td>". $zeile['Produkte'] . "</td>";	
-						echo "<td>". $zeile['Ansprechpartner'] . "</td>";
-						echo "<td>". $zeile['Email'] . "</td>";
-						echo "<td>". $zeile['Strasse'] . "</td>";
-						echo "<td>". $zeile['Hausnummer'] . "</td>";
-						echo "<td>". $zeile['PLZ'] . "</td>";
-						echo "<td>". $zeile['Ort'] . "</td>";
-						echo "<td>". $zeile['Telefon'] . "</td>";
-						echo "</tr>";
-						}
-						echo "</table>";
-						
-						mysqli_free_result( $db_erg );
 						?>	
+						<p></p>
+						<center>
+						<p><a href="Lieferanten.php">Zurück zur Übersicht <br></a></p>
+						</center>
+						
 					</div>	
 
-				<div class="container_2">
-					<form>	
-					<p> 
-					<input type="submit" name="bearbeiten" formaction="https://localhost/crnerp/Lieferanten-update-form.php" value="Lieferanten bearbeiten">
-					</p>
-					</form>
-				</div>		
-
+			
+					<br><br><br><br><br><br><br><br><br><br><br><br>
+					<br><br><br><br><br><br><br><br><br><br><br><br>
+					<br><br><br><br><br><br><br>
 			</div>
+
+		
+
+
 		</div>
 		</center>
+
+
+
 	</div>
+
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html> 
 <head>
 	
-<title>Lieferanten bearbeiten</title> 	
+<title>Lieferanten loeschen</title> 	
 	
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
@@ -42,7 +42,7 @@
 			
 				<div class="col-10 col-s-12 menu">	
 					<div class="container_2">
-						<h1 class="sansserif">Lieferanten bearbeiten</h1>
+						<h1 class="sansserif">Lieferanten löschen</h1>
 					</div> 
 
 					<div class="table_container" style="overflow-x:auto;">	
@@ -73,7 +73,8 @@
 						{
 						echo "<tr>";
 						$id = $zeile["ID"];
-						echo "<td> <input type= 'radio' name='auswahl' value='$id'> </td>";
+						echo "<td> <input type= 'checkbox' name='auswahl$id' value='$id'> </td>";
+						echo "<td> $id </td>";
 						echo "<td>". $zeile['ID'] . "</td>";
 						echo "<td>". $zeile['L_Name'] . "</td>";
 						echo "<td>". $zeile['Website'] . "</td>";
@@ -96,7 +97,7 @@
 				<div class="container_2">
 					<form>	
 					<p> 
-					<input type="submit" name="bearbeiten" formaction="https://localhost/crnerp/Lieferanten-update-form.php" value="Lieferanten bearbeiten">
+					<input type="submit" name="loeschen" formaction="https://localhost/crnerp/Lieferanten-geloescht.php" value="Lieferanten löschen">
 					</p>
 					</form>
 				</div>		
@@ -104,6 +105,10 @@
 			</div>
 		</div>
 		</center>
+
+
+
 	</div>
+
 </body>
 </html>
