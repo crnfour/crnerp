@@ -161,7 +161,7 @@
             echo "<input name='bearbeitungAbschicken' value='Bearbeitung abschließen' type='submit'>";
             echo "</form>";
             echo "<br><br>";
-            echo "<a href='lieferanten.php'>zurück zur Übersicht</a>";
+            echo "<a href='Lieferanten.php'>zurück zur Übersicht</a>";
             }
 
 
