@@ -62,7 +62,7 @@
 						//Ausgewählte Datensätze löschen:
 						for($i=6000000; $i<=6009999; $i++){
 							if(isset($_POST["auswahl$i"])){
-								$deleteAnweisung = "DELETE FROM lieferanten WHERE ID=$i";
+								$deleteAnweisung = "DELETE FROM lieferanten WHERE ID_Lief=$i";
 								$result = mysqli_query($db_link, $deleteAnweisung);
 								echo "Datensatz mit der ID $i wurde gelöscht. <br>";
 							}

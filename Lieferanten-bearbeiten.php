@@ -73,9 +73,9 @@
 						while ($zeile = $db_erg -> fetch_array( MYSQLI_ASSOC))
 						{
 						echo "<tr>";
-						$id = $zeile["ID"];
+						$id = $zeile["ID_Lief"];
 						echo "<td> <input type= 'radio' name='auswahl' value='$id'> </td>";
-						echo "<td>". $zeile['ID'] . "</td>";
+						echo "<td>". $zeile['ID_Lief'] . "</td>";
 						echo "<td>". $zeile['L_Name'] . "</td>";
 						echo "<td>". $zeile['Website'] . "</td>";
 						echo "<td>". $zeile['Produkte'] . "</td>";	

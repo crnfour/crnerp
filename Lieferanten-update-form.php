@@ -120,7 +120,7 @@
 
             // 3. Datenbankabfrage starten
             $id = $_POST["auswahl"];
-            $abfrage = "SELECT * FROM lieferanten WHERE ID = $id";
+            $abfrage = "SELECT * FROM lieferanten WHERE ID_Lief = $id";
             $result = $db_link -> query( $abfrage);
        
 
@@ -194,7 +194,7 @@
             PLZ ='$plz',
             Ort ='$ort',
             Telefon ='$telefon'
-            WHERE ID = $id";
+            WHERE ID_Lief = $id";
 
             //MySQL-Anweisung ausführen
                 $updatecheck =  mysqli_query($db_link, $update);
