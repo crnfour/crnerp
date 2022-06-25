@@ -72,7 +72,7 @@ if ($db_link->connect_error) {
 }
 
 /// Abfrage aller Datensätze der Tabelle Artikel
-$qry="SELECT ID, Teilenummer, Artikel, Lieferant, IDLief, Einzelpreis3, Lagerbestand, REG_Verwendung FROM artikel";
+$qry="SELECT TN, TN_Index, Artikel, Lieferant, ID_Lief, Lieferant, Einzelpreis3, Lagerbestand, REG_Verwendung FROM artikel";
 
 $result = $db_link -> query($qry);
 if ( ! $result )
@@ -86,11 +86,11 @@ echo "<table id=customers border='1'>
 <tr>
 
 <th></th>
-<th>ID</th>
-<th>Teilenummer</th>
+<th>TN</th>
+<th>TN_Index</th>
 <th>Artikel</th>
 <th>Lieferant</th>
-<th>IDLief</th>
+<th>ID_Lief</th>
 <th>Einzelpreis</th>
 <th>Lagerbestand</th>
 <th>Gesamtpreis</th>
@@ -115,15 +115,15 @@ while($rowval = $result -> fetch_array(MYSQLI_ASSOC))
   
   echo "<td></td>";
 
-  echo "<td>" . $rowval['ID'] . "</td>";
+  echo "<td>" . $rowval['TN'] . "</td>";
 
-  echo "<td>" . $rowval['Teilenummer'] . "</td>";
+  echo "<td>" . $rowval['TN_Index'] . "</td>";
 
   echo "<td>" . $rowval['Artikel'] . "</td>";
   
   echo "<td>" . $rowval['Lieferant'] . "</td>";
 
-  echo "<td>" . $rowval['IDLief'] . "</td>";
+  echo "<td>" . $rowval['ID_Lief'] . "</td>";
 
   echo "<td>" . $rowval['Einzelpreis3'] . "</td>";
   
