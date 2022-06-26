@@ -152,7 +152,7 @@ $summe_gesamtpreis += $rowval['Lagerbestand'] * $rowval['Einzelpreis3'];
 }
 
 // add a last row to display only the total price in the last column
-echo "<tr><td></td><td></td><td></td><td></td><td>$preis</td><td>$bestand</td><td>$summe_gesamtpreis</td><tr>";
+echo "<tr><td></td><td></td><td></td><td></td><td></td><td></td><td>$preis</td><td>$bestand</td><td>$summe_gesamtpreis</td><tr>";
 
 // closeing table tag
 echo "</table>";
